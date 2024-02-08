@@ -1,8 +1,14 @@
 /*https://www.marcbacon.com/tools/clamp-calculator/*/
 h1{
-    font-size: clamp(1rem, -2.3rem + 8.8vw, 3.75rem);
+    font-size: clamp(1.35rem, -2.3rem + 8.8vw, 4.5rem);
+    font-weight: 600;
+    font-style: normal;
 }
-h2{}
+h2{
+    font-size: clamp(1rem, -2.3rem + 8.8vw, 3.75rem);
+    font-weight: 500;
+    font-style: normal;
+}
 
 h3{}
 
