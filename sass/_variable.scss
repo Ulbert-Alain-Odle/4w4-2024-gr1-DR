@@ -1,7 +1,17 @@
 :root {
-    --couleur-arriere-entete : #aaa;
-    --couleur-arriere-accueil : #bbb;
-    --couleur-arriere-evenement : #ccc;
-    --couleur-arriere-galerie : #ddd;
-    --couleur-arriere-footer : #fff;
+    --couleur-arriere-entete : #ebbc56;
+    --couleur-arriere-accueil : #e7cfa1;
+    --couleur-arriere-evenement : #882b0f;
+    --couleur-arriere-galerie : #dba86d;
+    --couleur-arriere-footer : #eba242;
+
+    /*transparence*/
+
+    --transparenceH1 : 0.9;
+    --transparenceBande : 0.08;
+    --transparenceSection : 0.15;
+
+    /*largeur zone centrale*/
+
+    --largeur-zone-centrale : 900px;
 }

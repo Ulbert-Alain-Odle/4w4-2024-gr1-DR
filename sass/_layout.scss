@@ -20,10 +20,20 @@ body{
 .global > header ,
 .global > footer
 {
-    flex: 0 1 900px;
-    border: 1px solid black;
+    flex: 0 1 var(--largeur-zone-centrale);
+    //border: 1px solid black;
+    padding: 3rem 1rem;
 }
-
+#entete, #footer{
+    min-height: 20vh;
+    
+}
+.global > section{
+    background-color: rgba(255, 255, 255, var(--transparenceSection));
+}
+.global > header , .global > footer{
+    background-color: rgba(255, 255, 255, var(--transparenceBande));
+}
 #entete{
     background-color: var(--couleur-arriere-entete);
 }

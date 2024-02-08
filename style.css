@@ -13,11 +13,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-david-rousseau
 */
 :root {
-  --couleur-arriere-entete: #aaa;
-  --couleur-arriere-accueil: #bbb;
-  --couleur-arriere-evenement: #ccc;
-  --couleur-arriere-galerie: #ddd;
-  --couleur-arriere-footer: #fff;
+  --couleur-arriere-entete: #ebbc56;
+  --couleur-arriere-accueil: #e7cfa1;
+  --couleur-arriere-evenement: #882b0f;
+  --couleur-arriere-galerie: #dba86d;
+  --couleur-arriere-footer: #eba242;
+  /*transparence*/
+  --transparenceH1: 0.9;
+  --transparenceBande: 0.08;
+  --transparenceSection: 0.15;
+  /*largeur zone centrale*/
+  --largeur-zone-centrale: 900px;
 }
 
 * {
@@ -40,8 +46,20 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
-  border: 1px solid black;
+  flex: 0 1 var(--largeur-zone-centrale);
+  padding: 3rem 1rem;
+}
+
+#entete, #footer {
+  min-height: 20vh;
+}
+
+.global > section {
+  background-color: rgba(255, 255, 255, var(--transparenceSection));
+}
+
+.global > header, .global > footer {
+  background-color: rgba(255, 255, 255, var(--transparenceBande));
 }
 
 #entete {
@@ -69,10 +87,35 @@ h1 {
   font-size: clamp(1.35rem, -2.3rem + 8.8vw, 4.5rem);
   font-weight: 600;
   font-style: normal;
+  color: rgba(255, 106, 61, var(--transparenceH1));
 }
 
 h2 {
-  font-size: clamp(1rem, -2.3rem + 8.8vw, 3.75rem);
+  font-size: clamp(1rem, -0.714rem + 4.571vw, 3.4rem);
   font-weight: 500;
   font-style: normal;
+}
+
+h3 {
+  font-size: clamp(0.8rem, -0.771rem + 4.19vw, 3rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: clamp(1rem, -0.071rem + 2.857vw, 2.5rem);
+  font-weight: 300;
+  font-style: normal;
+}
+
+h5 {
+  font-size: clamp(0.9rem, -0.76rem + 1.56vw, 2.23rem);
+  font-weight: 200;
+  font-style: normal;
+}
+
+h6 {
+  font-size: clamp(0.7rem, -1.3rem + 7.1vw, 1.77rem);
+  font-weight: 100;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */
