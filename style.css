@@ -28,16 +28,19 @@ Text Domain: theme-david-rousseau
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Prompt", sans-serif;
 }
 
 .global {
-  min-height: 100vh;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 900px;
   border: 1px solid black;
 }
 
@@ -63,5 +66,13 @@ body {
 
 /*https://www.marcbacon.com/tools/clamp-calculator/*/
 h1 {
+  font-size: clamp(1.35rem, -2.3rem + 8.8vw, 4.5rem);
+  font-weight: 600;
+  font-style: normal;
+}
+
+h2 {
   font-size: clamp(1rem, -2.3rem + 8.8vw, 3.75rem);
+  font-weight: 500;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */
