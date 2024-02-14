@@ -1,10 +1,30 @@
 :root {
-    --couleur-arriere-entete : #ebbc56;
-    --couleur-arriere-accueil : #e7cfa1;
-    --couleur-arriere-evenement : #882b0f;
-    --couleur-arriere-galerie : #dba86d;
-    --couleur-arriere-footer : #eba242;
+    --u1 : 180; //couleur initial
+    --u2 : calc(var(--u1) + 180); //couleur complémentaire
+    --u3 : calc(var(--u2) - 30); //couleur analogue gauche complémentaire
+    --u4 : calc(var(--u3) + 30); //couleur analogue droite complémentaire
 
+    --s-arriere : 100%; //saturation arrière plan
+    --s-avant : 50%; //saturation avant plan
+
+    --l-arriere : 30%; //luminosité arrière plan
+    --l-avant : 20%; //luminosité avant plan
+
+    //couleur arrière plan
+
+    --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-evenement : hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-galerie : hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+    --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+
+    //couleur avant plan
+
+    --couleur-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
+    --couleur-accueil : hsl(var(--u2), var(--s-avant), var(--l-avant));
+    --couleur-evenement : hsl(var(--u3), var(--s-avant), var(--l-avant));
+    --couleur-galerie : hsl(var(--u4), var(--s-avant), var(--l-avant));
+    --couleur-footer : hsl(var(--u1), var(--s-avant), var(--l-avant));
     /*transparence*/
 
     --transparenceH1 : 0.9;

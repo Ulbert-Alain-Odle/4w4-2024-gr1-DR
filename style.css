@@ -13,11 +13,24 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-david-rousseau
 */
 :root {
-  --couleur-arriere-entete: #ebbc56;
-  --couleur-arriere-accueil: #e7cfa1;
-  --couleur-arriere-evenement: #882b0f;
-  --couleur-arriere-galerie: #dba86d;
-  --couleur-arriere-footer: #eba242;
+  --u1: 180;
+  --u2: calc(var(--u1) + 180);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u3) + 30);
+  --s-arriere: 100%;
+  --s-avant: 50%;
+  --l-arriere: 30%;
+  --l-avant: 20%;
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
   /*transparence*/
   --transparenceH1: 0.9;
   --transparenceBande: 0.08;
@@ -64,22 +77,27 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-evenement);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }
 
 /*https://www.marcbacon.com/tools/clamp-calculator/*/
@@ -87,7 +105,6 @@ h1 {
   font-size: clamp(1.35rem, -2.3rem + 8.8vw, 4.5rem);
   font-weight: 600;
   font-style: normal;
-  color: rgba(255, 106, 61, var(--transparenceH1));
 }
 
 h2 {
