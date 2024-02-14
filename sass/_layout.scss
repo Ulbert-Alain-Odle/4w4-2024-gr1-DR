@@ -25,18 +25,19 @@ body{
     padding: 3rem 1rem;
 }
 #entete, #footer{
-    min-height: 20vh;
+    min-height: 30vh;
     
 }
 .global > section{
-    background-color: rgba(255, 255, 255, var(--transparenceSection));
+    //background-color: rgba(255, 255, 255, var(--transparenceSection));
 }
 .global > header , .global > footer{
-    background-color: rgba(255, 255, 255, var(--transparenceBande));
+    //background-color: rgba(255, 255, 255, var(--transparenceBande));
 }
 #entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
+    position: relative;
 }
 #accueil{
     background-color: var(--couleur-arriere-accueil);
@@ -49,6 +50,7 @@ body{
 #galerie{
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
+    position: relative;
 }
 #footer{
     background-color: var(--couleur-arriere-footer);

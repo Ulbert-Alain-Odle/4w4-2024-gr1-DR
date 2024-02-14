@@ -64,20 +64,13 @@ body {
 }
 
 #entete, #footer {
-  min-height: 20vh;
-}
-
-.global > section {
-  background-color: rgba(255, 255, 255, var(--transparenceSection));
-}
-
-.global > header, .global > footer {
-  background-color: rgba(255, 255, 255, var(--transparenceBande));
+  min-height: 30vh;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -93,6 +86,7 @@ body {
 #galerie {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
+  position: relative;
 }
 
 #footer {
@@ -135,4 +129,24 @@ h6 {
   font-size: clamp(0.7rem, -1.3rem + 7.1vw, 1.77rem);
   font-weight: 100;
   font-style: italic;
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 141px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
 }/*# sourceMappingURL=style.css.map */
