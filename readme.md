@@ -1,5 +1,6 @@
-# labo1
-## Intro à sass et révision html/css
+# labo2
+## Utilisation de la fonction hsl()
+## Intégration d'effet vague et diagonale
 
 - Un dossier SASS qui contien :
     - base
