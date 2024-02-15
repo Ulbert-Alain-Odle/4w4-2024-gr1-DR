@@ -1,14 +1,14 @@
 :root {
-    --u1 : 180; //couleur initial
-    --u2 : calc(var(--u1) + 180); //couleur complémentaire
-    --u3 : calc(var(--u2) - 30); //couleur analogue gauche complémentaire
-    --u4 : calc(var(--u3) + 30); //couleur analogue droite complémentaire
+    --u1 : 0; //couleur initial
+    --u2 : calc(var(--u1) + 165); //couleur complémentaire
+    //--u3 : calc(var(--u2) - 30); //couleur analogue gauche complémentaire
+    //--u4 : calc(var(--u3) + 30); //couleur analogue droite complémentaire
 
     --s-arriere : 100%; //saturation arrière plan
-    --s-avant : 50%; //saturation avant plan
+    --s-avant : 100%; //saturation avant plan
 
-    --l-arriere : 30%; //luminosité arrière plan
-    --l-avant : 20%; //luminosité avant plan
+    --l-arriere : 70%; //luminosité arrière plan
+    --l-avant : 10%; //luminosité avant plan
 
     //couleur arrière plan
 
