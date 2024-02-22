@@ -94,6 +94,13 @@ button:hover{
     background-color: var(--couleur-arriere-accueil);
     color: var(--couleur-accueil);
 }
+button:visited{
+    background-color: var(--couleur-accueil);
+    color: var(--couleur-arriere-accueil);
+}
+button:focus{
+    outline: none;
+}
 a{
     text-decoration:double;
     color: var(--couleur-accueil);
