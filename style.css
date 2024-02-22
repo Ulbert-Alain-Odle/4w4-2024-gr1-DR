@@ -74,6 +74,8 @@ body {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
+  min-height: auto;
+  padding-right: 5%;
 }
 
 #accueil {
@@ -145,10 +147,14 @@ a:hover {
   margin: auto;
 }
 
+.global > header {
+  flex: 1;
+}
+
 .entete__header {
-  background-image: url(../image/agile.png);
-  background: no-repeat;
-  background-position: 98%;
+  background: url("image/github.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 /*https://www.marcbacon.com/tools/clamp-calculator/*/

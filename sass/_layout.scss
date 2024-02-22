@@ -41,6 +41,8 @@ body{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
     position: relative;
+    min-height: auto;
+    padding-right: 5%;
     
 }
 #accueil{
@@ -104,4 +106,7 @@ a:hover{
     border-radius: 5%;
     margin: auto;
     
+}
+.global > header{
+    flex: 1;
 }
