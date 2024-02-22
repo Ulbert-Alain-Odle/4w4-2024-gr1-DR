@@ -35,6 +35,7 @@ body{
 }
 .global > header{
     flex-basis: 100%;
+    margin-bottom: 5vw;
 }
 #entete{
     background-color: var(--couleur-arriere-entete);
@@ -80,27 +81,7 @@ blockquote{
     justify-content: space-around;
     gap: 2vw;
 }
-button{
-    padding: 1vw;
-    font-size: clamp(.8rem, -0.071rem + 2.857vw, 1.5rem);
-    width: 40%;
-    background-color: var(--couleur-entete);
-    color: var(--couleur-arriere-entete);
-    border: none;
-    border-radius: 50px ;
-    cursor: pointer;
-}
-button:hover{
-    background-color: var(--couleur-arriere-accueil);
-    color: var(--couleur-accueil);
-}
-button:visited{
-    background-color: var(--couleur-accueil);
-    color: var(--couleur-arriere-accueil);
-}
-button:focus{
-    outline: none;
-}
+
 a{
     text-decoration:double;
     color: var(--couleur-accueil);
