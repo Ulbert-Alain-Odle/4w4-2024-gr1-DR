@@ -1,0 +1,19 @@
+.diagonal{
+    position: relative;
+    isolation: isolate;
+}
+.diagonal::after{
+    content: '';
+    position: absolute;
+    /*top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+    background-color: var(--couleur-arriere-entete);
+    z-index: -1;
+    transform: skewY(-5deg);
+    inset: 0;
+    box-shadow: -1px 3px 51px 12px rgba(0,0,0,0.50);
+-webkit-box-shadow: -1px 3px 51px 12px rgba(0,0,0,0.60);
+-moz-box-shadow: -1px 3px 51px 12px rgba(0,0,0,0.60);
+}

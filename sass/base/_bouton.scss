@@ -1,0 +1,20 @@
+button{
+    padding: 1vw;
+    margin: 2rem;
+    font-size: clamp(.8rem, -0.071rem + 2.857vw, 1.3rem);
+    width: 40%;
+    background-image: linear-gradient(90deg, var(--couleur-entete), var(--couleur-entete));
+    color: var(--couleur-arriere-entete);
+    border: none;
+    border-radius: 50px ;
+    cursor: pointer;
+}
+button:hover{
+    background-image: linear-gradient(90deg, var(--couleur-arriere-accueil), var(--couleur-degrade-bleuNeg));
+    color: var(--couleur-accueil);
+}
+button:active{
+    background-image: linear-gradient(90deg, var(--couleur-arriere-accueil), var(--couleur-degrade-bleuPos));
+    background-color: var(--couleur-degrade-bleuPos);
+}
+

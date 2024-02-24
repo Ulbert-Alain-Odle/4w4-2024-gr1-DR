@@ -18,4 +18,11 @@ Text Domain: theme-david-rousseau
 
 @import "variable";
 @import "layout";
+@import "entete";
 @import "base/h";
+@import "base/bouton";
+@import "base/lien";
+@import "base/img";
+
+@import "effet/vague";
+@import "effet/diagonal";

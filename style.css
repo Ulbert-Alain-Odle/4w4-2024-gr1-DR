@@ -13,11 +13,30 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-david-rousseau
 */
 :root {
-  --couleur-arriere-entete: #aaa;
-  --couleur-arriere-accueil: #bbb;
-  --couleur-arriere-evenement: #ccc;
-  --couleur-arriere-galerie: #ddd;
-  --couleur-arriere-footer: #fff;
+  --u1: 0;
+  --u2: calc(var(--u1) + 180 - 15);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u1) + 180);
+  --s-arriere: 100%;
+  --s-avant: 100%;
+  --l-arriere: 70%;
+  --l-avant: 10%;
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+  --couleur-degrade-bleuNeg: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-degrade-bleuPos: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  /*transparence*/
+  --transparenceH1: 0.9;
+  --transparenceBande: 0.08;
+  --transparenceSection: 0.15;
+  /*largeur zone centrale*/
+  --largeur-zone-centrale: 1100px;
 }
 
 * {
@@ -40,28 +59,93 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
-  border: 1px solid black;
+  flex: 0 1 var(--largeur-zone-centrale);
+  padding: 3rem 1rem;
+}
+
+#entete, #footer {
+  min-height: 30vh;
+}
+
+.global > header {
+  flex-basis: 100%;
+  margin-bottom: 5vw;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
+  position: relative;
+  min-height: auto;
+  padding-right: 5%;
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #evenement {
-  background-color: var(--couleur-arriere-evenement);
+  background-color: var(--couleur-arriere-accueil);
+  z-index: 1;
+  color: var(--couleur-evenement);
+  display: flex;
+  justify-content: center;
 }
 
 #galerie {
-  background-color: var(--couleur-arriere-galerie);
+  background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-galerie);
+  position: relative;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
+}
+
+blockquote {
+  margin-top: 2vw;
+  padding: 2.5rem;
+  font-size: clamp(0.7rem, -0.071rem + 3.4vw, 1.4rem);
+  background-color: var(--couleur-entete);
+  color: var(--couleur-arriere-entete);
+  text-align: center;
+  border-radius: 5px;
+}
+
+#evenement div {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 2vw;
+}
+
+#galerie section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  margin-bottom: 10rem;
+  gap: 1rem;
+}
+
+#galerie section > div div {
+  width: 12vw;
+  height: 12vw;
+  margin: auto;
+}
+
+.global > header {
+  flex: 1;
+}
+
+.entete__header {
+  background: url("image/github.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
 }
 
 /*https://www.marcbacon.com/tools/clamp-calculator/*/
@@ -72,7 +156,127 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1rem, -2.3rem + 8.8vw, 3.75rem);
+  font-size: clamp(1rem, -0.714rem + 4.571vw, 3.4rem);
   font-weight: 500;
   font-style: normal;
+}
+
+h3 {
+  font-size: clamp(0.8rem, -0.771rem + 4.19vw, 3rem);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: clamp(1rem, -0.071rem + 2.857vw, 2.5rem);
+  font-weight: 300;
+  font-style: normal;
+}
+
+h5 {
+  font-size: clamp(0.9rem, -0.76rem + 2.56vw, 2.23rem);
+  font-weight: 200;
+  font-style: normal;
+}
+
+h6 {
+  font-size: clamp(0.7rem, -1.3rem + 7.1vw, 1.77rem);
+  font-weight: 100;
+  font-style: italic;
+}
+
+p {
+  font-size: clamp(0.2rem, -0.071rem + 2.857vw, 1.5rem);
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 1vw;
+  margin: 2rem;
+  font-size: clamp(0.8rem, -0.071rem + 2.857vw, 1.3rem);
+  width: 40%;
+  background-image: linear-gradient(90deg, var(--couleur-entete), var(--couleur-entete));
+  color: var(--couleur-arriere-entete);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(90deg, var(--couleur-arriere-accueil), var(--couleur-degrade-bleuNeg));
+  color: var(--couleur-accueil);
+}
+
+button:active {
+  background-image: linear-gradient(90deg, var(--couleur-arriere-accueil), var(--couleur-degrade-bleuPos));
+  background-color: var(--couleur-degrade-bleuPos);
+}
+
+a {
+  text-decoration: double;
+  color: var(--couleur-accueil);
+}
+
+a:hover {
+  color: var(--couleur-arriere-accueil);
+}
+
+a:visited {
+  color: var(--couleur-degrade-bleuNeg);
+}
+
+a:focus {
+  color: var(--couleur-degrade-bleuPos);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(131% + 1.3px);
+  height: 141px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur-arriere-accueil);
+}
+
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  content: "";
+  position: absolute;
+  /*top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;*/
+  background-color: var(--couleur-arriere-entete);
+  z-index: -1;
+  transform: skewY(-5deg);
+  inset: 0;
+  box-shadow: -1px 3px 51px 12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -1px 3px 51px 12px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -1px 3px 51px 12px rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=style.css.map */

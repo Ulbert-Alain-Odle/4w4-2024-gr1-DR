@@ -3,17 +3,43 @@ h1{
     font-size: clamp(1.35rem, -2.3rem + 8.8vw, 4.5rem);
     font-weight: 600;
     font-style: normal;
+    //color: rgba(255, 106, 61, var(--transparenceH1));;
 }
 h2{
-    font-size: clamp(1rem, -2.3rem + 8.8vw, 3.75rem);
+    font-size: clamp(1rem, -0.714rem + 4.571vw, 3.4rem);
     font-weight: 500;
     font-style: normal;
 }
 
-h3{}
+h3{
+    font-size: clamp(0.8rem, -0.771rem + 4.19vw, 3rem);
+    font-weight: 400;
+    font-style: normal;
+}
 
-h4{}
+h4{
+    font-size: clamp(1rem, -0.071rem + 2.857vw, 2.5rem);
+    font-weight: 300;
+    font-style: normal;
+}
 
-h5{}
+h5{
+    font-size: clamp(0.9rem, -0.76rem + 2.56vw, 2.23rem);
+    font-weight: 200;
+    font-style: normal;
+}
 
-h6{}
+h6{
+    font-size: clamp(0.7rem, -1.3rem + 7.1vw, 1.77rem);
+    font-weight: 100;
+    font-style: italic;
+}
+p{
+    font-size: clamp(0.2rem, -0.071rem + 2.857vw, 1.5rem);
+    font-weight: 300;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
