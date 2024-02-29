@@ -14,15 +14,17 @@ Text Domain: theme-david-rousseau
 */
 :root {
   --u1: 0;
-  --u2: calc(var(--u1) + 165);
+  --u2: calc(var(--u1) + 180 - 15);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u1) + 180);
   --s-arriere: 100%;
   --s-avant: 100%;
   --l-arriere: 70%;
   --l-avant: 10%;
   --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
   --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-evenement: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-galerie: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+  --couleur-degrade-bleuNeg: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+  --couleur-degrade-bleuPos: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
   --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
   --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
   --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
