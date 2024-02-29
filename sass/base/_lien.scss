@@ -1,0 +1,13 @@
+a{
+    text-decoration:double;
+    color: var(--couleur-accueil);
+}
+a:hover{
+    color: var(--couleur-arriere-accueil);
+}
+a:visited{
+    color: var(--couleur-degrade-bleuNeg);
+}
+a:focus{
+    color: var(--couleur-degrade-bleuPos);
+}

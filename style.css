@@ -121,15 +121,6 @@ blockquote {
   gap: 2vw;
 }
 
-a {
-  text-decoration: double;
-  color: var(--couleur-accueil);
-}
-
-a:hover {
-  color: var(--couleur-arriere-accueil);
-}
-
 #galerie section > div {
   display: flex;
   align-items: center;
@@ -200,11 +191,17 @@ p {
   font-style: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 button {
   padding: 1vw;
+  margin: 2rem;
   font-size: clamp(0.8rem, -0.071rem + 2.857vw, 1.3rem);
   width: 40%;
-  background-color: var(--couleur-entete);
+  background-image: linear-gradient(90deg, var(--couleur-entete), var(--couleur-entete));
   color: var(--couleur-arriere-entete);
   border: none;
   border-radius: 50px;
@@ -212,17 +209,50 @@ button {
 }
 
 button:hover {
-  background-color: var(--couleur-arriere-accueil);
+  background-image: linear-gradient(90deg, var(--couleur-arriere-accueil), var(--couleur-degrade-bleuNeg));
   color: var(--couleur-accueil);
 }
 
-button:visited {
-  background-color: white;
+button:active {
+  background-image: linear-gradient(90deg, var(--couleur-arriere-accueil), var(--couleur-degrade-bleuPos));
+  background-color: var(--couleur-degrade-bleuPos);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: double;
+  color: var(--couleur-accueil);
+}
+
+a:hover {
   color: var(--couleur-arriere-accueil);
 }
 
-button:focus {
-  box-shadow: -5px -5px 25px black inset;
+a:visited {
+  color: var(--couleur-degrade-bleuNeg);
+}
+
+a:focus {
+  color: var(--couleur-degrade-bleuPos);
+}
+
+.cours {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 20%;
+  border: solid black 1px;
 }
 
 .vague {
