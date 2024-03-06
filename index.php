@@ -12,7 +12,12 @@
 </head>
 <body>
     <div id="entete" class="global">
-        <header class="entete__header">
+        <header class="hero">
+            <div id="menu" class="global">
+                <header class="menu__header">
+                    <?php wp_nav_menu(array("container" => "nav")); ?>
+                </header>
+            </div>
             <h1>Thème du groupe 1</h1>
             <h2>4w4-Conception d'interface et devloppement web</h2>
             <h3>Tim - collège de maisonneuve</h3>

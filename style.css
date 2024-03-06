@@ -51,7 +51,6 @@ body {
 }
 
 .global {
-  min-height: 40vh;
   display: flex;
   justify-content: center;
 }
@@ -144,7 +143,7 @@ blockquote {
   flex: 1;
 }
 
-.entete__header {
+.hero {
   background: url("image/github.png");
   background-repeat: no-repeat;
   background-position: 100%;
@@ -258,6 +257,20 @@ a:focus {
   flex: 1 0 225px;
   border: solid black 1px;
   padding: 1rem;
+}
+
+/*
+feuille de style menu principal
+*/
+.menu-principal-container .menu {
+  display: flex;
+  list-style-type: none;
+}
+.menu-principal-container .menu-item {
+  flex: 1 0 50px;
+}
+.menu-principal-container .menu-item a {
+  color: #fff;
 }
 
 .vague {

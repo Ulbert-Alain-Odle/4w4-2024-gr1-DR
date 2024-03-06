@@ -11,7 +11,7 @@ body{
 }
 
 .global{
-    min-height: 40vh;
+    //min-height: 40vh;
     display: flex;
     justify-content: center;
 }
@@ -25,6 +25,11 @@ body{
     padding: 3rem 1rem;
 
 }
+
+.global > .hero{
+
+}
+
 #entete, #footer{
     min-height: 30vh;
     

@@ -1,0 +1,19 @@
+/*
+feuille de style menu principal
+*/
+.menu-principal-container { //nav
+
+    .menu { // ul
+        display : flex;
+        list-style-type: none;
+    }
+    
+    .menu-item { // li
+        flex: 1 0 50px;
+    }
+    
+    .menu-item a { // li a
+        color: #fff;
+    }
+}
+
