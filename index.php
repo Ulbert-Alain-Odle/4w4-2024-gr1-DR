@@ -46,7 +46,7 @@
                         <div class="carte">
                             <h3><?= substr(get_the_title(),0,7); ?></h3>
                             <h5><?= substr(get_the_title(),7,strpos(get_the_title(),"(") - 7); ?></h5>
-                            <h4><?= substr(get_the_title(),strpos(get_the_title(),"("), strlen(get_the_title())-strpos(get_the_title(),"("))?></h4>
+                            <h4><?= substr(get_the_title(),strpos(get_the_title(),"(") + 1, strlen(get_the_title()) - strpos(get_the_title(),"(") - 2)?></h4>
                             <!-- echo get_the_title(); -->
                             <p><?php echo wp_trim_words(get_the_content(),30); ?></p>
                         </div>
