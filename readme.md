@@ -1,30 +1,21 @@
-Adaptation du thème de exercice #1
+# labo 4
 
-Création du modèle index.php
+### Créer une nouvelle branche « labo4 »
+### Création d'un menu principal
+- Ajouter un menu permettant d'accéder
+  à vos cinq cours préférés
+  à chacune des sections de la page
 
-Création de la branche labo3
+- Le menu doit être formatter en utilisant 
+  composant/_menu.scss
+  Le menu doit être adaptatif et être amovible en version mobile.
+### création d'un header.php
+- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules du thème
 
-minimum 3 commits
+### Créer un template-part qui permettra d'afficher les vagues.
 
-Un Readme.md qui contiendra:
 
-Le nom de l'auteur
-L'objectif du labo3
-Les réalisations
-Un lien vers la github-page
-Décomposé le titre de chaque cours:
-
-sigle du cours ex: 582-4W4
-le titre du cours ex: Conception d'interface et développement Web
-la durée du cours : 90h
-Garder les 30 premiers mots de la description du cours.
-
-La section galerie affichera la liste des cours du TIM en 4 colonnes.
-La liste devra s'adapter aux différentes largeurs de fenêtre.
-Chacune des cartes de cours sera formatés en en utilisant les flex box
-Barème de correction
-Organistion du code, 3 commits minimum (point)
-Résultat sous forme de github page (.5 point)
-Design global de la page (.5 point)
-
+### créer un résumé des étape
+- 
+- auteur : David Rousseau
 - lien : https://ulbert-alain-odle.github.io/4w4-2024-gr1-DR/
