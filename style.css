@@ -39,12 +39,12 @@ Text Domain: theme-david-rousseau
   --largeur-zone-centrale: 1100px;
 }
 
-#entete {
-  --_couleur-arriere-vague: var(--couleur-arriere-entete);
+#menu__entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
 }
 
 #galerie {
-  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+  --_couleur-arriere-vague: var(--couleur-arriere-entete);
 }
 
 * {
@@ -277,6 +277,7 @@ feuille de style menu principal
   flex-direction: column;
   transition: all ease 1s;
   list-style-type: none;
+  transform: translateY(100%);
 }
 @media screen and (min-width: 700px) {
   .menu-principal-container .menu {
@@ -292,19 +293,28 @@ feuille de style menu principal
 .menu-principal-container .menu-item a {
   color: #fff;
 }
-.menu-principal-container #burger {
+.menu-principal-container .menu-item a:hover {
+  color: #ff0000;
+}
+
+#burger {
   display: block;
   position: absolute;
   top: 10px;
   right: 10px;
 }
 @media screen and (min-width: 700px) {
-  .menu-principal-container #burger {
+  #burger {
     display: none;
   }
 }
-.menu-principal-container #chk_burger:checked ~ .menu {
+
+#chk_burger:checked ~ .menu {
   transform: translateY(0);
+}
+
+input {
+  display: hidden;
 }
 
 .vague {

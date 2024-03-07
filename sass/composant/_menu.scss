@@ -8,6 +8,8 @@ feuille de style menu principal
         flex-direction: column;
         transition: all ease 1s;
         list-style-type: none;
+        transform: translateY(100%);
+        
         @media screen and (min-width: 700px) {
             display : flex;
             flex-direction: row;
@@ -23,18 +25,24 @@ feuille de style menu principal
     .menu-item a { // li a
         color: #fff;
     }
-    #burger{
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        @media screen and (min-width: 700px) {
-            display: none;
-        }
+    .menu-item a:hover { // li a
+        color: #ff0000;
     }
+}
+#burger{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+}
 
-    #chk_burger:checked ~ .menu {
-        transform: translateY(0);
-    }
+#chk_burger:checked ~ .menu {
+    transform: translateY(0);
+}
+input{
+    display: hidden;
 }
 

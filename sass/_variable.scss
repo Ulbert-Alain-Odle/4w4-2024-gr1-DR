@@ -37,9 +37,9 @@
 
 
 }
-#entete{
-    --_couleur-arriere-vague : var(--couleur-arriere-entete);
+#menu__entete{
+    --_couleur-arriere-vague : var(--couleur-arriere-accueil);
 }
 #galerie{
-    --_couleur-arriere-vague : var(--couleur-arriere-accueil);
+    --_couleur-arriere-vague : var(--couleur-arriere-entete);
 }
