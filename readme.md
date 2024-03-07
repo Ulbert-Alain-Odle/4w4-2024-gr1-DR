@@ -16,6 +16,6 @@
 
 
 ### créer un résumé des étape
-- 
+- j'ai ajouté un menu burger intérractif pour le menu sur mobile, un style de hover
 - auteur : David Rousseau
 - lien : https://ulbert-alain-odle.github.io/4w4-2024-gr1-DR/

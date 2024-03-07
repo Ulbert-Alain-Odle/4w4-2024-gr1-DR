@@ -6,20 +6,38 @@ feuille de style menu principal
     .menu { // ul
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         transition: all ease 1s;
         list-style-type: none;
-        transform: translateY(100%);
-        
+        transform: translateY(0%);
+        border-radius: 50px;
+        position: absolute;
+        left: 10vw;
+        right: 10vw;
+        top: 10vw;
+        height: 90vh;
+        background-color: rgba(19, 0, 0, 0.76);
+        z-index: 10;
         @media screen and (min-width: 700px) {
+            padding: 20px;
+            margin-top: 20px;
+            left: 1vw;
+            right: 0vw;
+            top: 0vw;
+            position: relative;
+            height: auto;
             display : flex;
+            justify-content: center;
             flex-direction: row;
             flex-wrap: wrap;
         }
     }
     
     .menu-item { // li
-        flex: 1 0 20%;
-        text-align: center;
+        text-align: center; 
+        @media screen and (min-width: 700px) {
+            flex: 1 0 20%;
+        }
     }
     
     .menu-item a { // li a
@@ -39,10 +57,10 @@ feuille de style menu principal
     }
 }
 
-#chk_burger:checked ~ .menu {
-    transform: translateY(0);
+#chk_burger:checked ~ .menu-principal-container .menu{
+    transform: translateY(100px);
 }
 input{
-    display: hidden;
+    display: none;
 }
 
