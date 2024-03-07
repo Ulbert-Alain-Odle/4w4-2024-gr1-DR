@@ -13,7 +13,10 @@
 <body>
     <div id="menu__entete" class="global">
         <div id="menu" class="global">
-            
+            <input type="checkbox" name="" id="chk_burger">
+            <label for="chk_burger" id="burger">
+                <!-- mettre svg -->
+            </label>
             <!-- <header class="menu__header"> -->
                 <?php wp_nav_menu(array("container" => "nav")); ?>
             <!-- </header> -->

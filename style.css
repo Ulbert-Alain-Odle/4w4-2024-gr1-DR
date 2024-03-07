@@ -273,12 +273,15 @@ a:focus {
 feuille de style menu principal
 */
 .menu-principal-container .menu {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  transition: all ease 1s;
+  list-style-type: none;
 }
 @media screen and (min-width: 700px) {
   .menu-principal-container .menu {
     display: flex;
-    list-style-type: none;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -288,6 +291,20 @@ feuille de style menu principal
 }
 .menu-principal-container .menu-item a {
   color: #fff;
+}
+.menu-principal-container #burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media screen and (min-width: 700px) {
+  .menu-principal-container #burger {
+    display: none;
+  }
+}
+.menu-principal-container #chk_burger:checked ~ .menu {
+  transform: translateY(0);
 }
 
 .vague {
