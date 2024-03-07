@@ -39,6 +39,14 @@ Text Domain: theme-david-rousseau
   --largeur-zone-centrale: 1100px;
 }
 
+#entete {
+  --_couleur-arriere-vague: var(--couleur-arriere-entete);
+}
+
+#galerie {
+  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -71,12 +79,14 @@ body {
   margin-bottom: 5vw;
 }
 
-#entete {
+#menu__entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
   min-height: auto;
   padding-right: 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 #accueil {
@@ -263,11 +273,18 @@ a:focus {
 feuille de style menu principal
 */
 .menu-principal-container .menu {
-  display: flex;
-  list-style-type: none;
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .menu-principal-container .menu {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
 }
 .menu-principal-container .menu-item {
-  flex: 1 0 50px;
+  flex: 1 0 20%;
+  text-align: center;
 }
 .menu-principal-container .menu-item a {
   color: #fff;
@@ -289,8 +306,8 @@ feuille de style menu principal
   height: 141px;
 }
 
-.vague .shape-fill {
-  fill: var(--couleur-arriere-accueil);
+.vague .remplissage {
+  fill: var(--_couleur-arriere-vague);
 }
 
 .diagonal {

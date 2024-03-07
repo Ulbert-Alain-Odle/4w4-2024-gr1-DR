@@ -40,12 +40,14 @@ body{
     flex-basis: 100%;
     margin-bottom: 5vw;
 }
-#entete{
+#menu__entete{
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
     position: relative;
     min-height: auto;
     padding-right: 5%;
+    display: flex;
+    flex-direction: column;
     
 }
 #accueil{

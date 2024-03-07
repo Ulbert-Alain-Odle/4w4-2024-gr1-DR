@@ -34,4 +34,12 @@
     /*largeur zone centrale*/
 
     --largeur-zone-centrale : 1100px;
+
+
+}
+#entete{
+    --_couleur-arriere-vague : var(--couleur-arriere-entete);
+}
+#galerie{
+    --_couleur-arriere-vague : var(--couleur-arriere-accueil);
 }

@@ -4,12 +4,17 @@ feuille de style menu principal
 .menu-principal-container { //nav
 
     .menu { // ul
-        display : flex;
-        list-style-type: none;
+        display: none;
+        @media screen and (min-width: 700px) {
+            display : flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
     }
     
     .menu-item { // li
-        flex: 1 0 50px;
+        flex: 1 0 20%;
+        text-align: center;
     }
     
     .menu-item a { // li a
