@@ -27,13 +27,15 @@
                 //     }
                 // }
 
-                //standart wordpress
-                if(have_posts()): the_post();?>
+                //standart wordpress      
+                    if(have_posts()): 
+                        while(have_posts()): the_post();?>
                         <div class="carte">
                             <h3><?php the_title(); ?></h3>
                             <p><?php echo wp_trim_words(get_the_content(),10); ?> </p>
                             <a href="<?php the_permalink(); ?>"> Article</a>
                         </div>
+                        <?php endwhile ?>
                 <?php endif ?>
                 </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -64,14 +66,4 @@
                get_template_part('gabarits/vague') 
             ?>
     </div>
-    <div id="footer" class="global">
-        <footer>
-            <h2>Footer (h2)</h2>
-            <h3>Réalisation de: (h3)</h3>
-            <h4>David Rousseau (h4)</h4>
-            <h5>company TM</h5>
-            <a href="#">ceci n'est pas un lien</a>
-        </footer>
-    </div>
-</body>
-</html>
+<?php get_footer() ?>

@@ -278,7 +278,7 @@ feuille de style menu principal
   justify-content: space-around;
   transition: all ease 1s;
   list-style-type: none;
-  transform: translateY(0%);
+  transform: translateY(-200%);
   border-radius: 50px;
   position: absolute;
   left: 10vw;
@@ -301,6 +301,7 @@ feuille de style menu principal
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    transform: translateY(0%);
   }
 }
 .menu-principal-container .menu-item {
@@ -331,7 +332,7 @@ feuille de style menu principal
 }
 
 #chk_burger:checked ~ .menu-principal-container .menu {
-  transform: translateY(100px);
+  transform: translateY(0);
 }
 
 input {

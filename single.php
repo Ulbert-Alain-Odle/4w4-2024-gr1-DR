@@ -17,13 +17,11 @@
                 // }
 
                 //standart wordpress
-                if(have_posts()):
-                    while(have_posts()): the_post();?>
+                if(have_posts()): the_post();?>
                         <div class="carte">
                             <h2><?php the_title(); ?></h3>
                             <p><?php the_content(); ?> </p>
                         </div>
-                    <?php endwhile ?>
                 <?php endif ?>
                 </div>
         </section>
@@ -42,14 +40,4 @@
                get_template_part('gabarits/vague') 
             ?>
     </div>
-    <div id="footer" class="global">
-        <footer>
-            <h2>Footer (h2)</h2>
-            <h3>Réalisation de: (h3)</h3>
-            <h4>David Rousseau (h4)</h4>
-            <h5>company TM</h5>
-            <a href="#">ceci n'est pas un lien</a>
-        </footer>
-    </div>
-</body>
-</html>
+<?php get_footer() ?>
