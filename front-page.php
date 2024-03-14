@@ -2,8 +2,8 @@
     get_header();
 ?>
         <header class="hero">
-            <h1>Thème du groupe 1 Front</h1>
-            <h2>4w4-Conception d'interface et devloppement web</h2>
+            <h1><?= get_bloginfo("name") ?></h1>
+            <h2><?= get_bloginfo("description"); ?></h2>
             <h3>Tim - collège de maisonneuve</h3>
             <button>Information</button>
         </header>
@@ -27,7 +27,8 @@
                 //     }
                 // }
 
-                //standart wordpress      
+                //standart wordpress
+      
                     if(have_posts()): 
                         while(have_posts()): the_post();?>
                         <div class="carte">
