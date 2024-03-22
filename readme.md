@@ -1,21 +1,30 @@
-# labo 4
+# Exercice 2 (5 points)
+## Compléter l'utilisation du mapping de couleurs avec boucle et mixin (1 point)
 
-### Créer une nouvelle branche « labo4 »
-### Création d'un menu principal
-- Ajouter un menu permettant d'accéder
-  à vos cinq cours préférés
-  à chacune des sections de la page
+### Amélioration de la page d'accueil (front-page.php) (1 point)
 
-- Le menu doit être formatter en utilisant 
-  composant/_menu.scss
-  Le menu doit être adaptatif et être amovible en version mobile.
-### création d'un header.php
-- Créer le template header.php qui contiendra la structure d'entête de la page qui sera reproduite dans chacun des modules du thème
+### Changer le titre et la description générale du site
+- Chaque destination contient les catégories associées.
+- On voit uniquement les destinations « populaire »
+- Améliorer l'apparence de la liste des catégories
+- Améliorer l'apparence de chacune des cartes
 
-### Créer un template-part qui permettra d'afficher les vagues.
+### Afficher des cartes de catégories pour l'ensemble des catégories dans la page d'accueil (2 points)
 
+- Titre de la catégorie
+- 10 premiers mot de la description
+- Un lien permet d'accéder à la liste des destinations de cette catégorie
+- Le nombre d'article pour cette catégorie
 
-### créer un résumé des étape
-- j'ai ajouté un menu burger intérractif pour le menu sur mobile, un style de hover
+### Créer un readme (1 point)
+
+- Créer une github-page : mettre à jour index.htm
+- Ajouter l'adresse de la github-page dans votre readme.
+- Le non de l'auteur
+- Courte description de votre tp1
+
+### information
+
+- lien : https://ulbert-alain-odle.github.io/4w4-2024-gr1-DR/ 
 - auteur : David Rousseau
-- lien : https://ulbert-alain-odle.github.io/4w4-2024-gr1-DR/
+- description : 
