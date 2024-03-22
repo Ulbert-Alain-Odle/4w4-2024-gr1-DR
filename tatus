@@ -1,0 +1,25 @@
+[33mbd36624[m[33m ([m[1;36mHEAD -> [m[1;32mtp1[m[33m, [m[1;31m4w4/tp1[m[33m)[m nouvelle base de donné
+[33m63b6e68[m ajout d'un logo et de texte dynamique avec get_bloginfo
+[33m6b44e4b[m correction du menu burger
+[33md49671d[m implémentation du single.php
+[33mfcca9de[m[33m ([m[1;31m4w4/labo4[m[33m, [m[1;32mlabo4[m[33m)[m fin du labo4
+[33me85761a[m reparation du bug des vague
+[33m818f4a3[m début du menu burger
+[33mf979528[m Ajout des gabarit
+[33m384e5b1[m création d'un readme
+[33m66c3eee[m début labo4
+[33mbcd6803[m[33m ([m[1;31m4w4/labo3[m[33m, [m[1;32mlabo3[m[33m)[m s5c1 solution du labo3
+[33mc0c2357[m formatage de police
+[33m2a67e46[m Poursuite du labo 3, implémentation des codes de cours
+[33m3c8b53b[m[33m ([m[1;32mexer1[m[33m)[m s4c2 début du site wp
+[33mb3d9559[m[33m ([m[1;31m4w4/exer1[m[33m)[m s3c2 implémenttion de l'image
+[33m22fc463[m c2s3 ajout de bouton.scss et de entete.scss
+[33m4228a7a[m[33m ([m[1;31m4w4/labo2[m[33m, [m[1;32mlabo2[m[33m)[m s3c2 aucun changement
+[33ma12f3ab[m fin du labo 2
+[33md99eeba[m s2c1 fin ajout des vagues et du root optimisé
+[33m89dc7db[m s2c1 mid création de palette colorimétrique par la fonction hsl
+[33m57c9bfb[m début s2c1 du labo2
+[33ma9a696d[m[33m ([m[1;31m4w4/labo1[m[33m, [m[1;32mlabo1[m[33m)[m labo1 fini
+[33mf3a32a7[m s1c2 Ajout d'un readme.md pour le labo1
+[33m1989c88[m[33m ([m[1;32mmain[m[33m)[m s1c2 Ajout police google font
+[33m01ceb5a[m[33m ([m[1;31m4w4/main[m[33m)[m s1c1 début structure sass
