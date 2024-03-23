@@ -16,6 +16,7 @@ feuille de style menu principal
         right: 10vw;
         top: 10vw;
         height: 90vh;
+        width: 75vw;
         background-color: rgba(19, 0, 0, 0.76);
         z-index: 10;
         @media screen and (min-width: 700px) {
@@ -37,7 +38,7 @@ feuille de style menu principal
     .menu-item { // li
         text-align: center; 
         @media screen and (min-width: 700px) {
-            flex: 1 0 20%;
+            flex: 1 0 10%;
         }
     }
     

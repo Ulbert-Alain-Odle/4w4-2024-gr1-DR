@@ -14,3 +14,27 @@ gap: 1rem;
  border: solid black 1px;
  padding: 1rem;
 }
+
+/*style des cartes de catégorie*/
+/*contenants des catégories*/
+.categories-cartes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    gap: 1rem;
+}
+/*style de chaque catégories*/
+.categorie-carte{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 20vw;
+    background-color: aliceblue;
+    border-radius:5% ;
+}
+/*style description de chaque catégories*/
+.categorie-carte p{
+    margin-top: .5rem;
+    
+}

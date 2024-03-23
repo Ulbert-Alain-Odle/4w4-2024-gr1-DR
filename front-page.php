@@ -33,15 +33,21 @@
                     // URL de la catégorie
                     $cat_link = get_category_link($categorie->term_id);
 
-                    // Si vous avez assigné une image à chaque catégorie, récupérez-la ici. Sinon, utilisez une image par défaut.
-                    // Exemple avec une image par défaut:
-                    $image_url; // Remplacez cela par l'URL de votre image par défaut
-
+                    // Description de la catégorie, limitée à 10 mots
+                    $description = wp_trim_words($categorie->description, 10, '...');
                     // Construction de chaque carte
                     $output .= sprintf(
-                        '<div class="categorie-carte"><a href="%s"><h3>%s</h3></a></div>',
+                        '<div class="categorie-carte">
+                            <a href="%s">
+                                <h3>%s</h3>
+                                <p>%s</p>
+                                <p>Articles: %d</p>
+                            </a>
+                        </div>',
                         esc_url($cat_link),
-                        esc_html($categorie->name)
+                        esc_html($categorie->name),
+                        esc_html($description),
+                        $categorie->count
                     );
                 }
 
