@@ -16,25 +16,50 @@
             <h2>
                 Accueil
             </h2>
+            <!-- création des carte de catégories -->
+            <?php
+                // Récupération des catégories
+                //print_r(get_categories()) ;
+                $categories = get_categories(array(
+                    'orderby' => 'name',
+                    'order'   => 'ASC',
+                    'hide_empty' => true, // Changez à false si vous voulez inclure les catégories sans articles
+                ));
+                //print_r($categories) ;
+                // Début du markup HTML
+                $output = '<div class="categories-cartes">';
+
+                foreach ($categories as $categorie) {
+                    // URL de la catégorie
+                    $cat_link = get_category_link($categorie->term_id);
+
+                    // Si vous avez assigné une image à chaque catégorie, récupérez-la ici. Sinon, utilisez une image par défaut.
+                    // Exemple avec une image par défaut:
+                    $image_url; // Remplacez cela par l'URL de votre image par défaut
+
+                    // Construction de chaque carte
+                    $output .= sprintf(
+                        '<div class="categorie-carte"><a href="%s"><h3>%s</h3></a></div>',
+                        esc_url($cat_link),
+                        esc_html($categorie->name)
+                    );
+                }
+
+                // Fin du markup HTML
+                $output .= '</div>';
+
+                // Retour du contenu HTML
+                echo $output;
+            ?>
+
             <div class="cours">
             <?php
-                // if (have_posts()){
-                //     while(have_posts()){
-                //         the_post();
-                //         the_title('<h5>','</h5>');
-                //         echo wp_trim_words(get_the_content(),30);
-
-                //     }
-                // }
-
-                //standart wordpress
-      
                     if(have_posts()): 
                         while(have_posts()): the_post();?>
                         <div class="carte">
                             <h3><?php the_title(); ?></h3>
                             <p><?php echo wp_trim_words(get_the_content(),10); ?> </p>
-                            <a href="<?php the_permalink(); ?>"> Article</a>
+                            <a href="<?php the_permalink(); ?>"> En savoir plus</a>
                         </div>
                         <?php endwhile ?>
                 <?php endif ?>
