@@ -62,7 +62,7 @@ $agencement-couleur :(
     secondaire-inv: ($--clr-orange-fonce, ($--clr-bleu-leger,$--clr-orange-pale)),
     ternaire: ($--clr-rouge-fonce, ($--clr-bleu-pale, $--clr-vert-pale)),
     blanc: (black, ($--clr-bleu-pale, white)),
-    btn-base:($--clr-vert-fonce,$--clr-vert-pale)
+    btn-base:($--clr-vert-fonce,$--clr-vert-pale),
 );
 
 //création de class de couleur
@@ -104,8 +104,13 @@ $agencement-couleur :(
 
     --btn-hover-bck: hsl(140, 100%, 15%);
     --btn-hover-clr: hsl(140, 100%, 85%);
-    --btn-click:linear-gradient(0deg, hsl(190, 100%, 85%), hsl(140, 100%, 85%));
+    --btn-click-bck:linear-gradient(-10deg, hsl(140, 100%, 60%), hsl(190, 100%, 70%));
+    --btn-click-clr:hsl(140, 100%, 15%);
 
+    --lien: hsl(140, 100%, 15%);
+    --lien-hover: hsl(60, 100%, 25%);
+    --lien-actif: hsl(140, 100%, 30%) ;
+    --lien-activer: hsl(60, 100%, 15%);
 
     // --u1 : 0; //couleur initial
     // --u2 : calc(var(--u1) + 180 - 15); //couleur complémentaire

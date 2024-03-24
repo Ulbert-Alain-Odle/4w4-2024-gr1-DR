@@ -179,7 +179,8 @@ button:hover {
 }
 
 button:active {
-  background-image: var(--btn-click);
+  background-image: var(--btn-click-bck);
+  color: var(--btn-click-clr);
 }
 
 img {
@@ -188,20 +189,20 @@ img {
 }
 
 a {
-  text-decoration: double;
-  color: var(--couleur-accueil);
+  color: var(--lien);
+  text-decoration: none;
 }
 
 a:hover {
-  color: var(--couleur-arriere-accueil);
+  color: var(--lien-hover);
 }
 
 a:visited {
-  color: var(--couleur-degrade-bleuNeg);
+  color: var(--lien-actif);
 }
 
 a:focus {
-  color: var(--couleur-degrade-bleuPos);
+  color: var(--lien-activer);
 }
 
 .cours {
@@ -544,7 +545,12 @@ input {
   --vague-bas: hsl(190, 100%, 40%);
   --btn-hover-bck: hsl(140, 100%, 15%);
   --btn-hover-clr: hsl(140, 100%, 85%);
-  --btn-click:linear-gradient(0deg, hsl(190, 100%, 85%), hsl(140, 100%, 85%));
+  --btn-click-bck:linear-gradient(-10deg, hsl(140, 100%, 60%), hsl(190, 100%, 70%));
+  --btn-click-clr:hsl(140, 100%, 15%);
+  --lien: hsl(140, 100%, 15%);
+  --lien-hover: hsl(60, 100%, 25%);
+  --lien-actif: hsl(140, 100%, 30%) ;
+  --lien-activer: hsl(60, 100%, 15%);
   /*transparence*/
   --transparenceH1: 0.9;
   --transparenceBande: 0.08;

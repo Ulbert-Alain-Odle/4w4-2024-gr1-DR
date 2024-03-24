@@ -87,10 +87,11 @@
         <section>
             <h2>Galerie</h2>
             <div>
-                <div><img src="" alt="ceci n'est pas une image"></div>
-                <div><img src="" alt="ceci n'est pas une image"></div>
-                <div><img src="" alt="ceci n'est pas une image"></div>
-                <div><img src="" alt="ceci n'est pas une image"></div>
+                <div><img src="image/voyage01.jpg" alt="voyage au caraibe"></div>
+                <div><img src="image/voyage02.jpeg" alt="mer déchainé du mexique"></div>
+                <div><img src="image/voyage03.jpg" alt="volcan au costa rica"></div>
+                <div><img src="image/voyage04.jpg" alt="ile caimen"></div>
+
             </div>
         </section>
             <?php

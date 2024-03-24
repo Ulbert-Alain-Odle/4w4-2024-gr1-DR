@@ -1,13 +1,13 @@
 a{
-    text-decoration:double;
-    color: var(--couleur-accueil);
+    color: var(--lien);
+    text-decoration: none;
 }
 a:hover{
-    color: var(--couleur-arriere-accueil);
+    color: var(--lien-hover);
 }
 a:visited{
-    color: var(--couleur-degrade-bleuNeg);
+    color: var(--lien-actif);
 }
 a:focus{
-    color: var(--couleur-degrade-bleuPos);
+    color: var(--lien-activer);
 }

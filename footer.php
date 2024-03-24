@@ -4,7 +4,7 @@
             <h3>Réalisation de: (h3)</h3>
             <h4>David Rousseau (h4)</h4>
             <h5>company TM</h5>
-            <a href="#">ceci n'est pas un lien</a>
+            <a href="#">Actualiser la page</a>
         </footer>
     </div>
 </body>

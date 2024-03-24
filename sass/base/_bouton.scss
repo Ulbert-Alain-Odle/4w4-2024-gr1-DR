@@ -12,6 +12,7 @@ button:hover{
     color: var(--btn-hover-clr);
 }
 button:active{
-    background-image: var(--btn-click);
+    background-image: var(--btn-click-bck);
+    color: var(--btn-click-clr);
 }
 
