@@ -4,7 +4,7 @@
         <header class="hero">
             <h1><?= get_bloginfo("name") ?></h1>
             <h2><?= get_bloginfo("description"); ?></h2>
-            <button>Information</button>
+            <button class="clr-agencement-btn-base">Information</button>
         </header>
         <?php
             get_template_part('gabarits/vague') 
@@ -77,8 +77,8 @@
         <section>
             <h2>Evenement</h2>
                 <div>
-                <button>Voir les évenements</button>
-                <button>S'inscrire</button>
+                <button class="clr-agencement-btn-base">Voir les évenements</button>
+                <button class="clr-agencement-btn-base">S'inscrire</button>
                 </div>
 
         </section>

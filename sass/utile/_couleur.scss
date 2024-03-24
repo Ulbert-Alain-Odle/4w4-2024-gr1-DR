@@ -61,7 +61,8 @@ $agencement-couleur :(
     secondaire: ($--clr-orange-fonce, ($--clr-orange-pale, $--clr-bleu-leger)),
     secondaire-inv: ($--clr-orange-fonce, ($--clr-bleu-leger,$--clr-orange-pale)),
     ternaire: ($--clr-rouge-fonce, ($--clr-bleu-pale, $--clr-vert-pale)),
-    blanc: (black, ($--clr-bleu-pale, white))
+    blanc: (black, ($--clr-bleu-pale, white)),
+    btn-base:($--clr-vert-fonce,$--clr-vert-pale)
 );
 
 //création de class de couleur
@@ -99,11 +100,11 @@ $agencement-couleur :(
 :root {
     /*couleur*/
     --vague-haut : hsl(190, 100%, 70%);
-    --vague-bas : hsl(190, 100%, 15%);
+    --vague-bas : hsl(190, 100%, 40%);
 
-    --btn-base: hsl(140, 100%, 15%);
-    --btn-actif:$--clr-bleu-fonce;
-    --btn-activer:$--clr-bleu-fonce;
+    --btn-hover-bck: hsl(140, 100%, 15%);
+    --btn-hover-clr: hsl(140, 100%, 85%);
+    --btn-click:linear-gradient(0deg, hsl(190, 100%, 85%), hsl(140, 100%, 85%));
 
 
     // --u1 : 0; //couleur initial

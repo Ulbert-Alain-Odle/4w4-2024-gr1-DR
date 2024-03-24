@@ -1,4 +1,4 @@
-<div id="footer" class="global bck-primaire-400">
+<div id="footer" class="global bck-primaire-300">
         <footer>
             <h2>Footer (h2)</h2>
             <h3>Réalisation de: (h3)</h3>

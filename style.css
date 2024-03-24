@@ -168,21 +168,18 @@ button {
   margin: 2rem;
   font-size: clamp(0.8rem, -0.071rem + 2.857vw, 1.3rem);
   width: 40%;
-  background-image: linear-gradient(90deg, var(--couleur-entete), var(--couleur-entete));
-  color: var(--couleur-arriere-entete);
   border: none;
   border-radius: 50px;
   cursor: pointer;
 }
 
 button:hover {
-  background-image: linear-gradient(90deg, var(--couleur-arriere-accueil), var(--couleur-degrade-bleuNeg));
-  color: var(--couleur-accueil);
+  background-color: var(--btn-hover-bck);
+  color: var(--btn-hover-clr);
 }
 
 button:active {
-  background-image: linear-gradient(90deg, var(--couleur-arriere-accueil), var(--couleur-degrade-bleuPos));
-  background-color: var(--couleur-degrade-bleuPos);
+  background-image: var(--btn-click);
 }
 
 img {
@@ -254,7 +251,7 @@ a:focus {
 feuille de style menu principal
 */
 .menu-principal-container {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -327,6 +324,19 @@ feuille de style menu principal
 
 input {
   display: none;
+}
+
+#menu > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media screen and (min-width: 700px) {
+  #menu > a {
+    font-size: 2rem;
+    justify-content: flex-start;
+  }
 }
 
 .vague {
@@ -523,13 +533,18 @@ input {
   background-image: linear-gradient(0deg, hsl(190, 100%, 85%), white);
 }
 
+.clr-agencement-btn-base {
+  color: hsl(140, 100%, 15%);
+  background-color: hsl(140, 100%, 85%);
+}
+
 :root {
   /*couleur*/
   --vague-haut: hsl(190, 100%, 70%);
-  --vague-bas: hsl(190, 100%, 15%);
-  --btn-base: hsl(140, 100%, 15%);
-  --btn-actif:$--clr-bleu-fonce;
-  --btn-activer:$--clr-bleu-fonce;
+  --vague-bas: hsl(190, 100%, 40%);
+  --btn-hover-bck: hsl(140, 100%, 15%);
+  --btn-hover-clr: hsl(140, 100%, 85%);
+  --btn-click:linear-gradient(0deg, hsl(190, 100%, 85%), hsl(140, 100%, 85%));
   /*transparence*/
   --transparenceH1: 0.9;
   --transparenceBande: 0.08;

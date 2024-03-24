@@ -3,7 +3,7 @@ feuille de style menu principal
 */
 .menu-principal-container { //nav
 
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -71,5 +71,16 @@ feuille de style menu principal
 }
 input{
     display: none;
+}
+//image de marque
+#menu>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    @media screen and (min-width: 700px) {
+        font-size: 2rem;
+        justify-content: flex-start;
+    }
 }
 
