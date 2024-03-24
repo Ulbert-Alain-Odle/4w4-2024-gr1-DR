@@ -4,26 +4,26 @@
 
 //pallette de couleur
 
-$--clr-bleu-pale    : hsl(220, 100%, 85%);
-$--clr-bleu-leger  : hsl(220, 100%, 60%);
-$--clr-bleu-moyen  : hsl(220, 100%, 30%);    
-$--clr-bleu-fonce  : hsl(220, 100%, 15%);
+$--clr-bleu-pale    : hsl(190, 100%, 85%);
+$--clr-bleu-leger  : hsl(190, 100%, 70%);
+$--clr-bleu-moyen  : hsl(190, 100%, 40%);    
+$--clr-bleu-fonce  : hsl(190, 100%, 15%);
 
 
-$--clr-orange-pale: hsl(40, 100%, 85%);
-$--clr-orange-leger  : hsl(40, 100%, 50%);
-$--clr-orange-moyen  : hsl(40, 100%, 30%);
-$--clr-orange-fonce  : hsl(40, 100%, 15%);
+$--clr-orange-pale: hsl(60, 100%, 80%);
+$--clr-orange-leger  : hsl(60, 100%, 55%);
+$--clr-orange-moyen  : hsl(60, 100%, 25%);
+$--clr-orange-fonce  : hsl(60, 100%, 15%);
 
 $--clr-rouge-pale: hsl(10, 100%, 85%);
 $--clr-rouge-leger  : hsl(10, 100%, 50%);
 $--clr-rouge-moyen  : hsl(10, 100%, 30%);
 $--clr-rouge-fonce  : hsl(10, 100%, 15%);
 
-$--clr-vert-pale: hsl(70, 100%, 85%);
-$--clr-vert-leger  : hsl(70, 100%, 50%);
-$--clr-vert-moyen  : hsl(70, 100%, 30%);
-$--clr-vert-fonce  : hsl(70, 100%, 15%);
+$--clr-vert-pale: hsl(140, 100%, 85%);
+$--clr-vert-leger  : hsl(140, 100%, 60%);
+$--clr-vert-moyen  : hsl(140, 100%, 30%);
+$--clr-vert-fonce  : hsl(140, 100%, 15%);
 
 // map 
 
@@ -58,9 +58,10 @@ $defaut: (
 
 $agencement-couleur :(
     primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
-    secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
-    ternaire: ($--clr-rouge-fonce, $--clr-rouge-pale),
-    vert: ($--clr-vert-fonce, $--clr-vert-pale)
+    secondaire: ($--clr-orange-fonce, ($--clr-orange-pale, $--clr-bleu-leger)),
+    secondaire-inv: ($--clr-orange-fonce, ($--clr-bleu-leger,$--clr-orange-pale)),
+    ternaire: ($--clr-rouge-fonce, ($--clr-bleu-pale, $--clr-vert-pale)),
+    blanc: (black, ($--clr-bleu-pale, white))
 );
 
 //création de class de couleur
@@ -85,7 +86,7 @@ $agencement-couleur :(
         @if(list.length($bck)==1){
             background-color: $bck;
         }   @else {
-            background-image: linear-gradient(90deg, $bck);
+            background-image: linear-gradient(0deg, $bck);
         }   
     }
 
@@ -96,32 +97,41 @@ $agencement-couleur :(
     } 
 
 :root {
-    --u1 : 0; //couleur initial
-    --u2 : calc(var(--u1) + 180 - 15); //couleur complémentaire
-    --u3 : calc(var(--u2) - 30); //couleur analogue gauche complémentaire
-    --u4 : calc(var(--u1) + 180); //couleur analogue droite complémentaire
+    /*couleur*/
+    --vague-haut : hsl(190, 100%, 70%);
+    --vague-bas : hsl(190, 100%, 15%);
 
-    --s-arriere : 100%; //saturation arrière plan
-    --s-avant : 100%; //saturation avant plan
+    --btn-base: hsl(140, 100%, 15%);
+    --btn-actif:$--clr-bleu-fonce;
+    --btn-activer:$--clr-bleu-fonce;
 
-    --l-arriere : 70%; //luminosité arrière plan
-    --l-avant : 10%; //luminosité avant plan
 
-    //couleur arrière plan
+    // --u1 : 0; //couleur initial
+    // --u2 : calc(var(--u1) + 180 - 15); //couleur complémentaire
+    // --u3 : calc(var(--u2) - 30); //couleur analogue gauche complémentaire
+    // --u4 : calc(var(--u1) + 180); //couleur analogue droite complémentaire
 
-    --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-    --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-    --couleur-degrade-bleuNeg : hsl(var(--u3), var(--s-arriere), var(--l-arriere));
-    --couleur-degrade-bleuPos : hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-    --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+    // --s-arriere : 100%; //saturation arrière plan
+    // --s-avant : 100%; //saturation avant plan
 
-    //couleur avant plan
+    // --l-arriere : 70%; //luminosité arrière plan
+    // --l-avant : 10%; //luminosité avant plan
 
-    --couleur-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
-    --couleur-accueil : hsl(var(--u2), var(--s-avant), var(--l-avant));
-    --couleur-evenement : hsl(var(--u3), var(--s-avant), var(--l-avant));
-    --couleur-galerie : hsl(var(--u4), var(--s-avant), var(--l-avant));
-    --couleur-footer : hsl(var(--u1), var(--s-avant), var(--l-avant));
+    // //couleur arrière plan
+
+    // --couleur-arriere-entete : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+    // --couleur-arriere-accueil : hsl(var(--u2), var(--s-arriere), var(--l-arriere));
+    // --couleur-degrade-bleuNeg : hsl(var(--u3), var(--s-arriere), var(--l-arriere));
+    // --couleur-degrade-bleuPos : hsl(var(--u4), var(--s-arriere), var(--l-arriere));
+    // --couleur-arriere-footer : hsl(var(--u1), var(--s-arriere), var(--l-arriere));
+
+    // //couleur avant plan
+
+    // --couleur-entete : hsl(var(--u1), var(--s-avant), var(--l-avant));
+    // --couleur-accueil : hsl(var(--u2), var(--s-avant), var(--l-avant));
+    // --couleur-evenement : hsl(var(--u3), var(--s-avant), var(--l-avant));
+    // --couleur-galerie : hsl(var(--u4), var(--s-avant), var(--l-avant));
+    // --couleur-footer : hsl(var(--u1), var(--s-avant), var(--l-avant));
     /*transparence*/
 
     --transparenceH1 : 0.9;

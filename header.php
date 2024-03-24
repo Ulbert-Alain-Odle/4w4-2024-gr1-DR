@@ -13,7 +13,7 @@
 <body>
     <div id="menu__entete" class="global clr-agencement-primaire" >
 
-        <div id="menu" class="global">
+        <div id="menu" class="global bck-primaire-400">
             <?= get_custom_logo() ?>
             <input type="checkbox" name="" id="chk_burger">
             <label for="chk_burger" id="burger">

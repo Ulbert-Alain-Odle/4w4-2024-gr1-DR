@@ -13,11 +13,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme-david-rousseau
 */
 #menu__entete {
-  --_couleur-arriere-vague: var(--couleur-arriere-accueil);
+  --_couleur-arriere-vague: var(--vague-haut);
 }
 
 #galerie {
-  --_couleur-arriere-vague: var(--couleur-arriere-entete);
+  --_couleur-arriere-vague: var(--vague-bas);
 }
 
 * {
@@ -55,33 +55,18 @@ body {
 #menu__entete {
   position: relative;
   min-height: auto;
-  padding-right: 5%;
   display: flex;
   flex-direction: column;
 }
 
-#accueil {
-  background-color: var(--couleur-arriere-accueil);
-  color: var(--couleur-accueil);
-}
-
 #evenement {
-  background-color: var(--couleur-arriere-accueil);
   z-index: 1;
-  color: var(--couleur-evenement);
   display: flex;
   justify-content: center;
 }
 
 #galerie {
-  background-color: var(--couleur-arriere-accueil);
-  color: var(--couleur-galerie);
   position: relative;
-}
-
-#footer {
-  background-color: var(--couleur-arriere-footer);
-  color: var(--couleur-footer);
 }
 
 blockquote {
@@ -268,6 +253,12 @@ a:focus {
 /*
 feuille de style menu principal
 */
+.menu-principal-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .menu-principal-container .menu {
   display: flex;
   flex-direction: column;
@@ -307,6 +298,8 @@ feuille de style menu principal
 @media screen and (min-width: 700px) {
   .menu-principal-container .menu-item {
     flex: 1 0 10%;
+    border-radius: 5%;
+    height: 100%;
   }
 }
 .menu-principal-container .menu-item a {
@@ -378,67 +371,67 @@ input {
 }
 
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: hsl(190, 100%, 85%);
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: hsl(190, 100%, 85%);
 }
 
 .clr-primaire-200 {
-  color: hsl(220, 100%, 60%);
+  color: hsl(190, 100%, 70%);
 }
 
 .bck-primaire-200 {
-  background-color: hsl(220, 100%, 60%);
+  background-color: hsl(190, 100%, 70%);
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(190, 100%, 40%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(190, 100%, 40%);
 }
 
 .clr-primaire-400 {
-  color: hsl(220, 100%, 15%);
+  color: hsl(190, 100%, 15%);
 }
 
 .bck-primaire-400 {
-  background-color: hsl(220, 100%, 15%);
+  background-color: hsl(190, 100%, 15%);
 }
 
 .clr-secondaire-100 {
-  color: hsl(40, 100%, 85%);
+  color: hsl(60, 100%, 80%);
 }
 
 .bck-secondaire-100 {
-  background-color: hsl(40, 100%, 85%);
+  background-color: hsl(60, 100%, 80%);
 }
 
 .clr-secondaire-200 {
-  color: hsl(40, 100%, 50%);
+  color: hsl(60, 100%, 55%);
 }
 
 .bck-secondaire-200 {
-  background-color: hsl(40, 100%, 50%);
+  background-color: hsl(60, 100%, 55%);
 }
 
 .clr-secondaire-300 {
-  color: hsl(40, 100%, 30%);
+  color: hsl(60, 100%, 25%);
 }
 
 .bck-secondaire-300 {
-  background-color: hsl(40, 100%, 30%);
+  background-color: hsl(60, 100%, 25%);
 }
 
 .clr-secondaire-400 {
-  color: hsl(40, 100%, 15%);
+  color: hsl(60, 100%, 15%);
 }
 
 .bck-secondaire-400 {
-  background-color: hsl(40, 100%, 15%);
+  background-color: hsl(60, 100%, 15%);
 }
 
 .clr-ternaire-100 {
@@ -474,76 +467,69 @@ input {
 }
 
 .clr-vert-100 {
-  color: hsl(70, 100%, 85%);
+  color: hsl(140, 100%, 85%);
 }
 
 .bck-vert-100 {
-  background-color: hsl(70, 100%, 85%);
+  background-color: hsl(140, 100%, 85%);
 }
 
 .clr-vert-200 {
-  color: hsl(70, 100%, 50%);
+  color: hsl(140, 100%, 60%);
 }
 
 .bck-vert-200 {
-  background-color: hsl(70, 100%, 50%);
+  background-color: hsl(140, 100%, 60%);
 }
 
 .clr-vert-300 {
-  color: hsl(70, 100%, 30%);
+  color: hsl(140, 100%, 30%);
 }
 
 .bck-vert-300 {
-  background-color: hsl(70, 100%, 30%);
+  background-color: hsl(140, 100%, 30%);
 }
 
 .clr-vert-400 {
-  color: hsl(70, 100%, 15%);
+  color: hsl(140, 100%, 15%);
 }
 
 .bck-vert-400 {
-  background-color: hsl(70, 100%, 15%);
+  background-color: hsl(140, 100%, 15%);
 }
 
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+  color: hsl(190, 100%, 15%);
+  background-image: linear-gradient(0deg, hsl(190, 100%, 85%), hsl(190, 100%, 70%));
 }
 
 .clr-agencement-secondaire {
-  color: hsl(40, 100%, 15%);
-  background-color: hsl(40, 100%, 85%);
+  color: hsl(60, 100%, 15%);
+  background-image: linear-gradient(0deg, hsl(60, 100%, 80%), hsl(190, 100%, 70%));
+}
+
+.clr-agencement-secondaire-inv {
+  color: hsl(60, 100%, 15%);
+  background-image: linear-gradient(0deg, hsl(190, 100%, 70%), hsl(60, 100%, 80%));
 }
 
 .clr-agencement-ternaire {
   color: hsl(10, 100%, 15%);
-  background-color: hsl(10, 100%, 85%);
+  background-image: linear-gradient(0deg, hsl(190, 100%, 85%), hsl(140, 100%, 85%));
 }
 
-.clr-agencement-vert {
-  color: hsl(70, 100%, 15%);
-  background-color: hsl(70, 100%, 85%);
+.clr-agencement-blanc {
+  color: black;
+  background-image: linear-gradient(0deg, hsl(190, 100%, 85%), white);
 }
 
 :root {
-  --u1: 0;
-  --u2: calc(var(--u1) + 180 - 15);
-  --u3: calc(var(--u2) - 30);
-  --u4: calc(var(--u1) + 180);
-  --s-arriere: 100%;
-  --s-avant: 100%;
-  --l-arriere: 70%;
-  --l-avant: 10%;
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-accueil: hsl(var(--u2), var(--s-arriere), var(--l-arriere));
-  --couleur-degrade-bleuNeg: hsl(var(--u3), var(--s-arriere), var(--l-arriere));
-  --couleur-degrade-bleuPos: hsl(var(--u4), var(--s-arriere), var(--l-arriere));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere), var(--l-arriere));
-  --couleur-entete: hsl(var(--u1), var(--s-avant), var(--l-avant));
-  --couleur-accueil: hsl(var(--u2), var(--s-avant), var(--l-avant));
-  --couleur-evenement: hsl(var(--u3), var(--s-avant), var(--l-avant));
-  --couleur-galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  --couleur-footer: hsl(var(--u1), var(--s-avant), var(--l-avant));
+  /*couleur*/
+  --vague-haut: hsl(190, 100%, 70%);
+  --vague-bas: hsl(190, 100%, 15%);
+  --btn-base: hsl(140, 100%, 15%);
+  --btn-actif:$--clr-bleu-fonce;
+  --btn-activer:$--clr-bleu-fonce;
   /*transparence*/
   --transparenceH1: 0.9;
   --transparenceBande: 0.08;

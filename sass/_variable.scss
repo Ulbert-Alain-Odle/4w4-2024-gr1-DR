@@ -1,6 +1,6 @@
 #menu__entete{
-    --_couleur-arriere-vague : var(--couleur-arriere-accueil);
+    --_couleur-arriere-vague : var(--vague-haut);
 }
 #galerie{
-    --_couleur-arriere-vague : var(--couleur-arriere-entete);
+    --_couleur-arriere-vague : var(--vague-bas);
 }

@@ -4,14 +4,13 @@
         <header class="hero">
             <h1><?= get_bloginfo("name") ?></h1>
             <h2><?= get_bloginfo("description"); ?></h2>
-            <h3>Tim - collège de maisonneuve</h3>
             <button>Information</button>
         </header>
         <?php
             get_template_part('gabarits/vague') 
         ?>
     </div>
-    <div id="accueil" class="global">
+    <div id="accueil" class="global clr-agencement-secondaire">
         <section>
             <h2>
                 Accueil
@@ -58,7 +57,7 @@
                 echo $output;
             ?>
 
-            <div class="cours">
+            <div class="cours bck-primaire-100">
             <?php
                     if(have_posts()): 
                         while(have_posts()): the_post();?>
@@ -74,7 +73,7 @@
             <blockquote>Si un lapin cours après ses rêves, c'est qu'il n'a jamais mangé une carote verte (Da Vinci - 1814)</blockquote>
         </section>
     </div>
-    <div id="evenement" class="global diagonal">
+    <div id="evenement" class="global diagonal bck-secondaire-100">
         <section>
             <h2>Evenement</h2>
                 <div>
@@ -84,7 +83,7 @@
 
         </section>
     </div>
-    <div id="galerie" class="global">
+    <div id="galerie" class="global clr-agencement-secondaire-inv">
         <section>
             <h2>Galerie</h2>
             <div>

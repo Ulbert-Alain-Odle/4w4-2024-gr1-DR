@@ -26,10 +26,6 @@ body{
 
 }
 
-.global > .hero{
-
-}
-
 #entete, #footer{
     min-height: 30vh;
     
@@ -45,31 +41,18 @@ body{
     //color: var(--couleur-entete);
     position: relative;
     min-height: auto;
-    padding-right: 5%;
     display: flex;
     flex-direction: column;
     
 }
-#accueil{
-    background-color: var(--couleur-arriere-accueil);
-    color: var(--couleur-accueil);
-    
-}
+
 #evenement{
-    background-color: var(--couleur-arriere-accueil);
     z-index: 1;
-    color: var(--couleur-evenement);
     display: flex;
     justify-content: center;
 }
 #galerie{
-    background-color: var(--couleur-arriere-accueil);
-    color: var(--couleur-galerie);
     position: relative;
-}
-#footer{
-    background-color: var(--couleur-arriere-footer);
-    color: var(--couleur-footer);
 }
 blockquote{
     margin-top: 2vw;
