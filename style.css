@@ -110,9 +110,10 @@ blockquote {
 }
 
 .hero {
-  background: url("image/github.png");
+  background: url("image/terre.png");
   background-repeat: no-repeat;
   background-position: 100%;
+  background-size: 10%;
 }
 
 /*https://www.marcbacon.com/tools/clamp-calculator/*/
@@ -159,8 +160,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-top: clamp(0.1rem, -0.071rem + 1vw, 0.5rem);
+  margin-bottom: clamp(0.1rem, -0.071rem + 0.5vw, 0.3rem);
 }
 
 button {
@@ -210,6 +211,7 @@ a:focus {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 1rem;
+  margin: 1rem;
 }
 
 .carte {
@@ -221,6 +223,8 @@ a:focus {
   flex: 1 0 225px;
   border: solid black 1px;
   padding: 1rem;
+  border-radius: 20px;
+  backdrop-filter: blur(16px) saturate(150%);
 }
 
 /*style des cartes de catégorie*/
@@ -229,8 +233,10 @@ a:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+  margin: 1rem;
 }
 
 /*style de chaque catégories*/
@@ -238,14 +244,17 @@ a:focus {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 20vw;
-  background-color: aliceblue;
-  border-radius: 5%;
+  width: 40%;
+  padding: 1vw;
+  border-radius: 20px;
+  backdrop-filter: blur(16px) saturate(150%);
+  border: black solid 1px;
 }
 
 /*style description de chaque catégories*/
 .categorie-carte p {
-  margin-top: 0.5rem;
+  margin-top: clamp(0.2rem, -0.071rem + 2vw, 0.5rem);
+  font-size: clamp(0.2rem, -0.071rem + 2vw, 1rem);
 }
 
 /*

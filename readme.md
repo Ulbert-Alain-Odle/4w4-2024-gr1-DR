@@ -27,4 +27,4 @@
 
 - lien : https://ulbert-alain-odle.github.io/4w4-2024-gr1-DR/ 
 - auteur : David Rousseau
-- description : 
+- description : Pour ce travail, les couleur du site on tous été retravaillé pour donner un style plus en adéquation avec le thème du voyage. Les cartes de styles ont été amélioré en donnant une plus grande saturation à leur background. Les cartes de catégories on aussi été ajouté. Le code à été optimisé au niveau de Root et des couleur, ansi que pour la front page.

@@ -3,6 +3,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
 gap: 1rem;
+margin: 1rem;
 }
 .carte{
  display: flex;
@@ -13,6 +14,8 @@ gap: 1rem;
  flex: 1 0 calc(900px/4);
  border: solid black 1px;
  padding: 1rem;
+ border-radius:20px ;
+ backdrop-filter: blur(16px) saturate(150%);
 }
 
 /*style des cartes de catégorie*/
@@ -21,20 +24,27 @@ gap: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
+    margin: 1rem;
+
 }
 /*style de chaque catégories*/
 .categorie-carte{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 20vw;
-    background-color: aliceblue;
-    border-radius:5% ;
+    width: 40%;
+    padding: 1vw;
+    border-radius:20px ;
+    backdrop-filter: blur(16px) saturate(150%);
+    border: black solid 1px;
 }
+
 /*style description de chaque catégories*/
 .categorie-carte p{
-    margin-top: .5rem;
+    margin-top: clamp(0.2rem, -0.071rem + 2vw, 0.5rem);
+    font-size: clamp(0.2rem, -0.071rem + 2vw, 1rem);
     
 }

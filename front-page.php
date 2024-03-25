@@ -15,6 +15,9 @@
             <h2>
                 Accueil
             </h2>
+            <h3>
+                Catégories
+            </h3>
             <!-- création des carte de catégories -->
             <?php
                 // Récupération des catégories
@@ -56,8 +59,10 @@
                 // Retour du contenu HTML
                 echo $output;
             ?>
-
-            <div class="cours bck-primaire-100">
+            <h3>
+                Populaire!
+            </h3>
+            <div class="cours">
             <?php
                     if(have_posts()): 
                         while(have_posts()): the_post();?>
